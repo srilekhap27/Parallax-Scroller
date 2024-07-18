@@ -83,16 +83,15 @@ header nav a:hover {
     top: 0; /* Ensure mountains layer starts from top */
 }
 
-/* Additional commented-out styles */
-/*
-.cave {
-    transform-origin: 50% 80%; /* Transform origin for cave */
+
+/* .cave {
+    transform-origin: 50% 80%; 
 }
 
 .moon {
-    transform-origin: 50% 100%; /* Transform origin for moon */
-}
-*/
+    transform-origin: 50% 100%; 
+} */
+
 
 /* Styles for the About section */
 .About {
