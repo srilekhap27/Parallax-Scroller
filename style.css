@@ -1,99 +1,117 @@
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-*{
+
+/* Global Reset and Defaults */
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Default font for the entire document */
 }
 
-.Home{
+/* Styles for the Home section */
+.Home {
     position: relative;
-    min-height: 100vh;
-    background-color: #1a5cbd;
+    min-height: 100vh; /* Minimum full viewport height */
+    background-color: #1a5cbd; /* Blue background color */
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow: hidden; /* Hide overflowing content */
 }
 
-header{
+/* Header styles */
+header {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 99;
-    color: white;
+    z-index: 99; /* Ensure header stays above other content */
+    color: white; /* Text color */
     font-size: 22px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Spacing between header items */
     align-items: center;
-    padding: 30px 90px;
+    padding: 30px 90px; /* Padding around header content */
 }
 
-header nav a{
+/* Navigation links in header */
+header nav a {
     font-size: 26px;
-    margin-left: 28px;
-    color: white;
-    transition: .7s;
+    margin-left: 28px; /* Space between navigation links */
+    color: white; /* Default text color */
+    transition: .7s; /* Smooth color transition on hover */
 }
 
+/* Active and hover states for navigation links */
 header nav .active,
-header nav a:hover{
-    color: #0099ff;
+header nav a:hover {
+    color: #0099ff; /* Blue color on hover or when active */
 }
 
-.Home h1{
+/* Styles for heading in the Home section */
+.Home h1 {
     position: absolute;
-    color: white;
+    color: white; /* Text color */
     font-size: 100px;
-    z-index: 99;
+    z-index: 99; /* Ensure heading stays above other content */
 }
 
-.Home img{
+/* Image styles in the Home section */
+.Home img {
     position: absolute;
-    pointer-events: none;
+    pointer-events: none; /* Ignore pointer events on images */
 }
 
+/* Styles for different layers (cave, mountains, etc.) */
 .cave,
 .layer,
-.mountains{
+.mountains {
     width: 100%;
     height: 100%;
 }
 
-.stars{
+/* Specific styles for stars layer */
+.stars {
     height: 100%;
-    left: 0;
+    left: 0; /* Ensure stars layer starts from left */
 }
 
-.mountains{
-    top: 0;
+/* Styles for mountains layer */
+.mountains {
+    top: 0; /* Ensure mountains layer starts from top */
 }
 
-/* .cave{
-    transform-origin: 50% 80%;
+/* Additional commented-out styles */
+/*
+.cave {
+    transform-origin: 50% 80%; /* Transform origin for cave */
 }
 
-.moon{
-    transform-origin: 50% 100%;
-} */
+.moon {
+    transform-origin: 50% 100%; /* Transform origin for moon */
+}
+*/
 
-.About{
-    min-height: 100vh;
-    background-color: #06001b;
-    color: white;
-    padding: 50px 100px;
+/* Styles for the About section */
+.About {
+    min-height: 100vh; /* Minimum full viewport height */
+    background-color: #06001b; /* Dark blue background color */
+    color: white; /* Text color */
+    padding: 50px 100px; /* Padding around content */
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 80px;
+    gap: 80px; /* Spacing between elements */
 }
 
-.About h1{
+/* Heading styles in the About section */
+.About h1 {
     font-size: 50px;
 }
 
-.About p{
+/* Paragraph styles in the About section */
+.About p {
     font-size: 20px;
 }
